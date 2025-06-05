@@ -1,0 +1,109 @@
+/* 🌟 Fond bleu électrique */
+body {
+    background-color: #007BFF; /* Bleu électrique uni */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📌 Conteneur du quiz */
+#quiz-container {
+    max-width: 600px;
+    padding: 30px;
+    background: transparent; /* Plus de cadre blanc */
+    text-align: center;
+    margin: 50px auto;
+}
+
+/* 📢 Question bien visible */
+#question-text {
+    font-size: 60px; /* Augmente la taille */
+    font-weight: bold;
+    color: white;
+    margin-bottom: 60px; /* Ajoute plus d’espace sous la question */
+}
+
+/* 🎯 Disposition des réponses (2 colonnes de 2) */
+#answer-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espacement entre les réponses */
+    justify-content: center;
+}
+
+/* 🟩 Gros boutons de réponse (gris anthracite, texte blanc) */
+.option {
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase; /* Majuscules */
+    padding: 25px;
+    background-color: #333333; /* Gris anthracite */
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: white;
+}
+
+.option:hover {
+    background-color: #555555; /* Légère variation au survol */
+}
+
+/* ✅ Réponse correcte */
+.correct {
+    background-color: #4CAF50 !important;
+    color: white !important;
+}
+
+/* ❌ Réponse incorrecte */
+.wrong {
+    background-color: #E63946 !important;
+    color: white !important;
+}
+
+/* 🎯 Bouton "Suivant" bien en dessous et en outline */
+#next-btn {
+    font-size: 20px;
+    padding: 15px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 40px;
+    border-radius: 8px;
+    margin: 30px auto; /* Centre le bouton */
+    text-align: center;
+    display: block; /* S'assurer qu'il soit bien en dessous */
+}
+
+#next-btn:hover {
+    background-color: white;
+    color: #007BFF;
+}
+
+#liberable-btn {
+    font-size: 22px;
+    padding: 15px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: block;
+    margin: 30px auto; /* Centre le bouton */
+    text-align: center;
+
+    
+}
+
+#liberable-btn:hover {
+    background: white;
+    color: #007BFF;
+}

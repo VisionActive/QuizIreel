@@ -1,0 +1,158 @@
+/* 🌟 Fond de page */
+body {
+    background-color: #e1dad8;
+    color: rgb(35, 35, 37);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* 📌 Conteneur du résultat */
+#liberation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* 📢 Message de libération */
+#liberation-message, #liberation-message span {
+    color: #01020b !important;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+
+/* 📊 Affichage du score */
+#score-display {
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* 🎯 Conteneur des boutons */
+#button-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+/* 🎯 Boutons */
+button {
+    font-size: 20px;
+    padding: 15px;
+    background: #333;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background: #555;
+}
+
+/* 📌 Gestion de la visibilité des boutons */
+#retry-btn, #lazy-btn, #call-btn {
+    display: none; /* Cachés par défaut */
+    visibility: visible !important;
+}
+
+/* ✅ Affichage contrôlé par JavaScript */
+.show {
+    display: block !important;
+}
+
+/* 🎭 Pop-up */
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 320px; /* Légèrement plus large pour une meilleure lisibilité */
+    text-align: center;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Animation fluide */
+}
+
+#popup-content {
+    position: relative;
+    font-size: 18px;
+    padding: 15px;
+}
+
+#popup a {
+    color: rgb(21, 21, 88);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#close-popup {
+    position: absolute;
+    top: -10px; /* 🔹 Déplace la croix plus haut */
+    right: -10px;
+    cursor: pointer;
+    font-size: 24px; /* 🔹 Agrandit la croix pour plus de visibilité */
+    font-weight: bold;
+    color: #01020b;
+    background: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ✅ Ajout d’un effet au survol */
+#close-popup:hover {
+    color: #03051a;
+    transform: scale(1.2);
+}
+
+/* ✅ Animation d'apparition */
+.popup-show {
+    opacity: 1 !important;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#popup:not(.popup-show) {
+    opacity: 0 !important;
+    display: none !important;
+}
+
+#join-group-text {
+    margin-top: 15px;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    text-align: center; /* 🔹 Assure que le texte est bien centré */
+    display: block; /* 🔹 Force l'affichage en bloc */
+    width: auto; /* 🔹 Prend uniquement la largeur du texte */
+}
+
+#join-group-text a {
+    color: rgb(19, 23, 97);
+    font-weight: bold;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: column; /* 🔹 Organise les boutons et le texte en colonne */
+    align-items: center; /* 🔹 Centre tous les éléments */
+}
+

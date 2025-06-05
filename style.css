@@ -1,0 +1,213 @@
+/* 1️⃣ Style général du site */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(120deg, rgb(192, 233, 255), #0066ff); /* Dégradé */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 2️⃣ Conteneur du quiz */
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 4️⃣ Style du toggle Dark Mode */
+.toggle-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.toggle {
+    width: 80px;
+    height: 40px;
+    background: #ddd;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+
+/* Icônes du toggle */
+.toggle-icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.sun, .moon {
+    font-size: 20px;
+    opacity: 0.5;
+    transition: opacity 0.4s ease;
+}
+
+/* La balle qui bouge */
+.toggle-ball {
+    width: 30px;
+    height: 30px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    transition: left 0.4s ease;
+}
+
+/* Mode sombre */
+.dark-mode {
+    background: linear-gradient(120deg, #000000, #07122b);
+    color: white;
+}
+
+.dark-mode .container {
+    background: #222;
+    color: white;
+}
+
+.dark-mode .toggle {
+    background: #1a2a4f;
+}
+
+/* Soleil moins lumineux et lune bien visible */
+.dark-mode .sun {
+    opacity: 0.3;
+}
+
+.dark-mode .moon {
+    opacity: 1;
+}
+
+.dark-mode .toggle-ball {
+    left: 45px;
+}
+
+/* Bouton du quiz en mode clair */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #4da8ff; /* Bleu clair */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2f669a;
+    transform: scale(1.1);
+}
+
+/* Bouton du quiz en mode sombre */
+.dark-mode button {
+    background-color: #333; /* Gris anthracite */
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #141414;
+    transform: scale(1.1);
+}
+
+/* Conteneur du toggle */
+.toggle-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Style du toggle */
+.toggle {
+    width: 80px;
+    height: 35px;
+    background: #ddd;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+    transition: background 0.4s ease;
+}
+
+/* Icônes du toggle */
+.toggle-icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+/* Icônes du toggle (Soleil et Lune) */
+.sun, .moon {
+    font-size: 22px;
+    position: absolute;
+    transition: opacity 0.4s ease;
+}
+
+/* 🌞 Positionne le soleil au centre du toggle-ball */
+.sun {
+    position: absolute;
+    left: 10px; /* Ajustement pour bien placer le soleil */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.moon {
+    position: absolute;
+    right: 10px; /* Ajustement pour bien placer la lune */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Balle qui glisse */
+.toggle-ball {
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 15px;
+    position: absolute;
+    left: 7px;
+    transition: left 0.4s ease;
+}
+
+/* Quand on active le mode sombre */
+.dark-mode .toggle-ball {
+    left: 42px; /* Ajustement pour qu'il soit parfaitement sous la lune */
+}
+
+/* Mode sombre */
+.dark-mode .toggle {
+    background: #1a2a4f; /* Bleu nuit */
+}
+
+/* Soleil devient moins lumineux, lune devient bien visible */
+.dark-mode .sun {
+    opacity: 0.3;
+}
+
+.dark-mode .moon {
+    opacity: 1;
+    color: #ffffff; /* La lune reste bien visible */
+}
+
+/* Animation du carré blanc */
+.dark-mode .toggle-ball {
+    left: 45px;
+}
+

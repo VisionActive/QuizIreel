@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr"> <!-- Définit la langue du site -->
+<head>
+    <meta charset="UTF-8"> <!-- Indique que le texte sera en UTF-8, évite les problèmes d'affichage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permet l'affichage correct sur mobile -->
+    <title>Défi Irréel</title> <!-- Titre affiché sur l'onglet du navigateur -->
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS pour le design -->
+</head>
+<body>
+    <!-- Bouton Dark Mode -->
+<div class="toggle-container">
+    <div class="toggle">
+        <div class="toggle-ball"></div>
+        <div class="toggle-icons">
+            <span class="sun">🌞</span>
+            <span class="moon">🌙</span>
+        </div>
+    </div>
+</div>
+
+    <div class="container"> <!-- Conteneur principal, pour centrer le contenu -->
+        <h1>🔒 Le Grand Quiz de Libération 🔒</h1> <!-- Titre du quiz -->
+        <p>Réponds aux questions correctement pour sortir !</p> <!-- Petit texte d’introduction -->
+        
+        <div id="quiz-container"></div> <!-- Ici, le JavaScript ajoutera les questions du quiz -->
+       <button onclick="window.location.href='quiz.html'">Démarrer le quiz</button>
+        
+        
+        <div id="result"></div> <!-- Cet élément affichera le message de victoire ou de honte -->
+    </div>
+
+    <script src="script.js"></script> <!-- Lien vers le JavaScript qui gérera le quiz -->
+
+
+</body>
+</html>

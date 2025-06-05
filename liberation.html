@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultat du Quiz</title>
+    <link rel="stylesheet" href="liberation.css">
+</head>
+<body>
+
+    <div id="liberation-container">
+        <span id="score-display"></span> <!-- Affichage du score -->
+        <h2 id="liberation-message"></h2> <!-- Affichage de la phrase -->
+
+        <!-- Conteneur pour les boutons -->
+        <div id="button-container">
+            <button id="retry-btn" onclick="window.location.href='quiz.html'">Recommencer</button>
+            <button id="lazy-btn" onclick="showPopup()">La flemme ?</button>
+            <button id="call-btn">📞 Appeler</button> <!-- Bouton d'appel ajouté -->
+        </div>
+    </div>
+
+    <!-- Pop-up pour "La flemme ?" -->
+    <div id="popup">
+        <div id="popup-content">
+            <span id="close-popup" onclick="closePopup()">✖</span>
+            <p>Pour sortir d'ici sans effort, rejoins le 
+                <a href="https://www.insérerlelienici.com" target="_blank">groupe des bloqués</a> 
+                et envoie une photo de toi !
+            </p>
+        </div>
+    </div>
+
+    <script src="liberation.js"></script>
+</body>
+</html>
